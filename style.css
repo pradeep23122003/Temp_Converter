@@ -1,0 +1,77 @@
+/* Base styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #7834e6, #41f7f4);
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    outline: none;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    background-color: #1824d0;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #05ccd2;
+}
+
+/* Thermometer styles */
+.thermometer {
+    margin-top: 20px;
+    position: relative;
+    width: 100px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.thermometer svg {
+    width: 100%;
+    height: auto;
+}
+
+#thermometer-level {
+    transition: cy 0.3s ease-in-out;
+}
+
+#temperature-display {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2em;
+}

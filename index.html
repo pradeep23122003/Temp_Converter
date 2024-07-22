@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Temperature Converter</h2>
+        <div class="input-container">
+            <label for="celsius">Celsius:</label>
+            <input type="number" id="celsius" placeholder="Enter temperature in Celsius">
+        </div>
+        <div class="input-container">
+            <label for="fahrenheit">Fahrenheit:</label>
+            <input type="number" id="fahrenheit" placeholder="Enter temperature in Fahrenheit">
+        </div>
+        <button onclick="convertTemperature()">Convert</button>
+        <button onclick="clearFields()">Clear</button>
+        <div class="thermometer">
+            <svg viewBox="0 0 24 48" xmlns="http://www.w3.org/2000/svg">
+                <rect x="9" y="2" width="6" height="32" fill="#ccc" stroke="#333" stroke-width="2"/>
+                <circle cx="12" cy="40" r="6" fill="#ccc" stroke="#333" stroke-width="2"/>
+                <circle id="thermometer-level" cx="12" cy="40" r="6" fill="#ff4500"/>
+            </svg>
+            <span id="temperature-display">0°C</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
